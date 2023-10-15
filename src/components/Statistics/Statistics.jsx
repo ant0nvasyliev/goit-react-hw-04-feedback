@@ -1,11 +1,11 @@
 import {StatisticsContainer, StatisticsItem} from './Statistics.styled'
 
-export const Statistics = ({ feedbackScore, totalFeedback, positivePercentage }) => {
+export const Statistics = ({ good, neutral, bad, totalFeedback, positivePercentage }) => {
 return  (
    <StatisticsContainer>
-      <StatisticsItem>Good - {feedbackScore.good}</StatisticsItem>
-      <StatisticsItem>Neutral - {feedbackScore.neutral}</StatisticsItem>
-      <StatisticsItem>Bad - {feedbackScore.bad}</StatisticsItem>
+      <StatisticsItem>Good - {good}</StatisticsItem>
+      <StatisticsItem>Neutral - {neutral}</StatisticsItem>
+      <StatisticsItem>Bad - {bad}</StatisticsItem>
       <StatisticsItem>Total - {totalFeedback}</StatisticsItem>
       <StatisticsItem>Average percentage - {positivePercentage} %</StatisticsItem>
    </StatisticsContainer>    
